@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformerLoadLosses", "TransformerLoadLosses.csproj", "{6BC2E870-6941-4FB3-B2C8-D1CF14D1E3DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryElectricalObjects", "..\..\LibraryElectricalObjects\LibraryElectricalObjects.csproj", "{A4802F73-4C3B-4CA1-96D3-D54867C109EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6BC2E870-6941-4FB3-B2C8-D1CF14D1E3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BC2E870-6941-4FB3-B2C8-D1CF14D1E3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BC2E870-6941-4FB3-B2C8-D1CF14D1E3DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4802F73-4C3B-4CA1-96D3-D54867C109EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4802F73-4C3B-4CA1-96D3-D54867C109EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4802F73-4C3B-4CA1-96D3-D54867C109EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4802F73-4C3B-4CA1-96D3-D54867C109EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
