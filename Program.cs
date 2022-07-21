@@ -13,16 +13,12 @@ namespace TransformerLoadLosses
         static void Main(string[] args)
         {
 
-            //Параметры для ВЛ-110 Сергач
-            OverHeadPowerLine line1 = new OverHeadPowerLine(0.249, 0.427, 4.3);
-
-            TransformatorSplitWinding t1 = new TransformatorSplitWinding(115, 25000, 9.81, 135000, 26000);
-            Transformator t2 = new Transformator(55, 16000, 2.012, 18175, 14805);
-
+            
             List<ElectricalObjects> electricalObjects = new List<ElectricalObjects>();
-            electricalObjects.Add(t1);
-            electricalObjects.Add(t2);
-            electricalObjects.Add(line1);
+            electricalObjects.Add(new OverHeadPowerLine(0.249, 0.427, 4.3));//  ВЛ-110 АС120\19
+            electricalObjects.Add(new TransformatorSplitWinding(115, 25000, 9.81, 135000, 26000)); // ОРДТНЖ-25000\110
+            electricalObjects.Add(new Transformator(27.5, 400, 6.5, 5500, 950)); // ТМЖ-400\27.5
+            electricalObjects.Add(new OverHeadPowerLine(0.258, 0.6, 0.04)); // КЛ-0.4 ААГ3х120+1х50
 
             foreach (var item in electricalObjects)
             {
@@ -38,7 +34,7 @@ namespace TransformerLoadLosses
                 Console.WriteLine($"Активное = {item.Resistance()}");
                 Console.WriteLine($"Реактивное = {item.Reactance()}");
                 Console.WriteLine($"Полное = {item.Impedance()}");
-
+                
             }
 
 
